@@ -54,10 +54,11 @@ a {
 --------------------------------------*/
 
 
-/* sets the size of header container */
+/* sets the size and position quality of header container */
 header {
     width: 100%;
     max-width: 1305px;
+    position: relative;
 }
 
 /* sets the typography of header h2 */
@@ -69,6 +70,10 @@ header h2 {
     font-weight: 100;
     font-size: 1.85rem;
     color: #050505;
+}
+
+nav {
+    display: inline-block
 }
 
 /* sets the size, typography, and position of the nav container within the header */
@@ -87,21 +92,21 @@ header li {
 }
 
 /* the following a 3 selectors style the nav links and their various states */
-header a {
+nav a {
     color: #7F7F7F;
     font-weight: 500;
 }
 
-header a:hover {
+nav a:hover {
     color: #F78A36;
 }
 
-header a:active {
+nav a:active {
     color: #AD1022;
 }
 
 /* this contains information for the first of two hidden drop menus */
-header #hidden-menu-setup {
+#hidden-menu-setup {
     display: none;
     width: 495px;
     line-height: .9;
@@ -122,7 +127,7 @@ header #hidden-menu-setup {
 }
 
 /* this contains information for the second of two hidden drop menus */
-header #hidden-menu-planets {
+#hidden-menu-planets {
     display: none;
     width: 110px;
     line-height: .9;
@@ -140,7 +145,39 @@ header #hidden-menu-planets {
     display: block;
 }
 
-/* positioning and sizing for social media symbols */
+/* positioning for social media symbols */
 #social-media-header {
     display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
+
+/* sizing and color for social media symbols */
+.fab, .far {
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding: 10px 3px;
+    color: #454545;
+}
+
+/* causes all social media icons to gain opacity when anyone of them are hovered over */
+#social-media-header:hover > a {
+    opacity: 0.5;
+    transition-duration: .3s;
+}
+
+/* causes specific social media icon that is hovered over to lose all opacity and return to it's normal color */
+#social-media-header:hover > a:hover {
+    opacity: 1.0;
+    transition-duration: .3s;
+}
+
+
+
+
+/*
+3. HERO IMAGE CONTAINER & CONTENT
+--------------------------------------*/
+
+
