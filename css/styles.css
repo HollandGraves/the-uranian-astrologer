@@ -78,7 +78,7 @@ nav {
 
 /* sets the size, typography, and position of the nav container within the header */
 header nav {
-    padding-top: 30px;
+    padding-top: 28px;
     text-transform: uppercase;
     font-size: .90rem;
     letter-spacing: 0px;
@@ -118,6 +118,7 @@ nav a:active {
     outline: 1px solid rgba(179, 179, 179, 0.1);
     outline-offset: 5px;
     z-index: 1;
+    background-color: white;
 }
 
 /* triggers the hidden nav bar to appear */
@@ -138,6 +139,7 @@ nav a:active {
     margin-top: 9px;
     border: 1px solid rgba(179, 179, 179, 0.1);
     z-index: 1;
+    background-color: white;
 }
 
 /* triggers the hidden nav bar to appear */
@@ -181,3 +183,44 @@ nav a:active {
 --------------------------------------*/
 
 
+/* sets the hero image container's size, position, text-align, and margin */
+#hero-image-container {
+    width: 100%;
+    max-height: 626px;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* sets size, fitting properties, position, and z-index of container's background img */
+#hero-image-container img {
+    width: 100%;
+    max-height: 626px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .99;
+}
+
+/* positions mission statement text in middle of container and sets color/uppercase */
+#mission-statement {
+    padding-top: 235px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* mission statement header typography */
+#mission-statement h1 {
+    font-size: 2.95rem;
+    font-weight: 100;
+}
+
+/* mission statement paragraph typography */
+#mission-statement p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    line-height: 2.1;
+}
