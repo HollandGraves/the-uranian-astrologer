@@ -1,0 +1,146 @@
+/*
+    TABLE OF CONTENTS
+    1. GENERAL STYLES
+    2. HEADER
+    3. HERO IMAGE CONTAINER & CONTENT
+    4. MAIN CONTENT
+    5. SIDEBAR
+    6. FOOTER
+*/
+
+
+
+
+/*
+1. GENERAL STYLES 
+--------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+#page-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/*
+2. HEADER   
+--------------------------------------*/
+
+
+/* sets the size of header container */
+header {
+    width: 100%;
+    max-width: 1305px;
+}
+
+/* sets the typography of header h2 */
+header h2 {
+    padding-left: .5rem;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.85rem;
+    color: #050505;
+}
+
+/* sets the size, typography, and position of the nav container within the header */
+header nav {
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: .90rem;
+    letter-spacing: 0px;
+    position: relative;
+}
+
+/* aligns the 1st level of list items within the mav */
+header li {
+    display: inline-block;
+    padding: .5rem;
+}
+
+/* the following a 3 selectors style the nav links and their various states */
+header a {
+    color: #7F7F7F;
+    font-weight: 500;
+}
+
+header a:hover {
+    color: #F78A36;
+}
+
+header a:active {
+    color: #AD1022;
+}
+
+/* this contains information for the first of two hidden drop menus */
+header #hidden-menu-setup {
+    display: none;
+    width: 495px;
+    line-height: .9;
+    position: absolute;
+    left: 65px;
+    box-sizing: border-box;
+    padding: 7px;
+    margin-top: 9px;
+    outline: 1px solid rgba(179, 179, 179, 0.1);
+    outline-offset: 5px;
+    z-index: 1;
+}
+
+/* triggers the hidden nav bar to appear */
+#hidden-menu-trigger-setup:hover #hidden-menu-setup {
+    display: block;
+
+}
+
+/* this contains information for the second of two hidden drop menus */
+header #hidden-menu-planets {
+    display: none;
+    width: 110px;
+    line-height: .9;
+    position: absolute;
+    left: 320px;
+    box-sizing: border-box;
+    padding: 7px;
+    margin-top: 9px;
+    border: 1px solid rgba(179, 179, 179, 0.1);
+    z-index: 1;
+}
+
+/* triggers the hidden nav bar to appear */
+#hidden-menu-trigger-planets:hover #hidden-menu-planets {
+    display: block;
+}
+
+/* positioning and sizing for social media symbols */
+#social-media-header {
+    display: inline-block;
+}
