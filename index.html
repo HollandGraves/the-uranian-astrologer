@@ -19,9 +19,10 @@
             1. PAGE CONTAINER
             2. HEADER
             3. HERO IMAGE WELCOME CONTAINER
-            4. MAIN CONTENT
-            5. SIDEBAR
-            6. FOOTER
+            4. DIV CONTAINING MAIN-CONTENT & SIDEBAR
+            5. MAIN CONTENT
+            6. SIDEBAR
+            7. FOOTER
         -->
 
     </head>
@@ -42,76 +43,76 @@
                     <ul id="main-nav">
                         <!-- link to homepage -->
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#" target="_self">Home</a>
                         </li>
 
                         <!-- list item containing hidden hover dropdown menu -->
                         <li id="hidden-menu-trigger-setup">
-                            <a href="#">What is Uranian Astrology?</a>
+                            <a href="#" target="_self">What is Uranian Astrology?</a>
                             
                             <!-- hidden hover dropdown menu -->
                             <ul id="hidden-menu-setup">
                                 <li>
-                                    <a href="#" >What is Uranian Astrology?</a>
+                                    <a href="#" target="_self">What is Uranian Astrology?</a>
                                 </li>
                                 <li>
-                                    <a href="#" >How to set up and explore your own chart on the dial</a>
+                                    <a href="#" target="_self">How to set up and explore your own chart on the dial</a>
                                 </li>
                             </ul>
 
                         </li>
                         <!-- list item containing hidden hover dropdown menu -->
                         <li id="hidden-menu-trigger-planets">
-                            <a href="#" >The Transneptunian Planets</a>
+                            <a href="#" target="_self">The Transneptunian Planets</a>
                             
                             <!-- hidden hover dropdown menu -->
                             <ul id="hidden-menu-planets">
                                 <li>
-                                    <a href="#">Cupido</a>
+                                    <a href="#" target="_self">Cupido</a>
                                 </li>
                                 <li>
-                                    <a href="#">Hades</a>
+                                    <a href="#" target="_self">Hades</a>
                                 </li>
                                 <li>
-                                    <a href="#">Zeus</a>
+                                    <a href="#" target="_self">Zeus</a>
                                 </li>
                                 <li>
-                                    <a href="#">Kronos</a>
+                                    <a href="#" target="_self">Kronos</a>
                                 </li>
                                 <li>
-                                    <a href="#">Apollon</a>
+                                    <a href="#" target="_self">Apollon</a>
                                 </li>
                                 <li>
-                                    <a href="#">Admetos</a>
+                                    <a href="#" target="_self">Admetos</a>
                                 </li>
                                 <li>
-                                    <a href="#">Vulcanus</a>
+                                    <a href="#" target="_self">Vulcanus</a>
                                 </li>
                                 <li>
-                                    <a href="#">Poseidon</a>
+                                    <a href="#" target="_self">Poseidon</a>
                                 </li>
                             </ul>
                         </li>
                         <!-- Blog -->
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="#" target="_self">Blog</a>
                         </li>
                         <!-- Consultations -->
                         <li>
-                            <a href="#">Consultations</a>
+                            <a href="#" target="_self">Consultations</a>
                         </li>
                         <!-- Contanct Me -->
                         <li>
-                            <a href="#">Contact Me</a>
+                            <a href="#" target="_self">Contact Me</a>
                         </li>
                     </ul>
                 </nav>
                 <!-- Social Media Symbols -->
                 <div id="social-media-header">
-                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a href="#"><i class="far fa-envelope fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
                 </div>
             </header>
             <!--
@@ -123,7 +124,7 @@
 
                 <!-- centered text in middle of hero image -->
                 <div id="mission-statement">
-                    <h1>Illuminating Path And Purpose</h1>
+                    <h1><span class="smaller-mission-text">Illuminating</span> Path <span class="smaller-mission-text">And</span> Purpose</h1>
 
                     <p>THROUGH THE URANIAN SYSTEM OF ASTROLOGY.</p>
                     <p>OUR MOST EVOLVED AND INTERPRETIVE</p>
@@ -131,17 +132,59 @@
                 </div>
             </div>
             <!--
-4.          MAIN CONTENT
+4.          DIV CONTAINING MAIN-CONTENT & SIDEBAR
             -->
-            <section>
+            <div id="content-and-sidebar-container">
+                <!--
+5.              MAIN CONTENT
+                -->
+                <section>
+                    <!-- quote from author to start section content-->
+                    <p id="author-quote" >
+                        "The Uranian system illuminates patterns unlike any other system of astrology.  With the dial we move right into the heart of our personal story, our potentials as well as our dilemmas, opening up the kind of dialogue that brings workable perspective into our lives." 
+                    </p>
+                    <!-- the quotee of the above quote -->
+                    <p id="quotee">
+                        Susan Herskowitz, The Uranian Astrologer
+                    </p>
+                    <!-- div to create horizontal rule through -->
+                    <div class="horizontal-rule">
+                        <hr>
+                    </div>
+                    <!-- "featured" which exists above newest article on page -->
+                    <span class="featured">
+                        Featured
+                    </span>
+                    <!-- image link to featured article -->
+                    <a href="#" target="_self">
+                        <img class="featured-article-img" src="img/YouTube4.jpg" alt="image of two men swinging from trapeze bars" />
+                    </a>
+                    <!-- div containing title of article that links to article-->
+                    <div class="title-of-article">
+                        <a href="#" target="_self">
 
-            </section>
-            <!--
-5.          SIDEBAR
-            -->
-            <aside>
+                        </a>
+                    </div>
+                    <!-- div containing date and comments link -->
+                    <div class="end-of-article">
+                        Jul 19, 2016
 
-            </aside>
+                        <a href="#" target="_self">
+                            2 comments
+                        </a>
+                    </div>
+                    <!-- div to create horizontal rule through -->
+                    <div class="horizontal-rule">
+                        <hr>
+                    </div>
+                </section>
+            </div>
+                <!--
+6.              SIDEBAR
+                -->
+                <aside>
+
+                </aside>
             <!--
 7.          FOOTER
             -->
