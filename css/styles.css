@@ -28,6 +28,7 @@ body {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: white;
+    font-weight: 300;
 }
 
 #page-container {
@@ -237,20 +238,83 @@ nav a:active {
 --------------------------------------*/
 
 
+/* creates size and position of content-&-sidebar container */
 #content-and-sidebar-container {
     width: 100%;
-    max-width: 1285px;
+    max-width: 1280px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    position: relative;
+    top: 280px;
 }
 
+/* creates size restrictions for content container */
 section {
-    flex-basis: 79%;
+    flex-basis: 80%;
     max-width: 1010px;
 }
 
+/* styles quote right beneath hero image */
+section #author-quote {
+    text-align: center;
+    font-size: 1.37rem;
+    color: #7F7F7F;
+}
+
+/* styles quotee beneath quote */
+section #quotee {
+    text-align: center;
+    font-size: 1.37rem;
+    color: #7F7F7F;
+    padding: 30px 0px;
+}
+
+/* creates the styles for the class involving horizontal rule, 
+these will be used to space articles within the main content */
+section .horizontal-rule {
+    color: #7F7F7F;
+    opacity: .2;
+    padding: 30px 0px;
+}
+
+/* styles the word featured that is above the image of the featured
+article */
+section .featured {
+    margin-bottom: 17px;
+    color: #7F7F7F;
+    font-size: .8rem;
+}
+
+/* styles featured article image to fit into the section "main content"
+container */
 section .featured-article-img {
     width: 100%;
     object-fit: cover;
+}
+
+/* aligns link-title of featured aritcle to center of contianer */
+section .title-of-article {
+    text-align: center;
+}
+
+/* styles link-title to featured article */
+section .title-of-article a {
+    color: #050505;
+    font-size: 1.7rem;
+}
+
+/* sets size and centering of container containing read-more link to
+featured article */
+section .read-more-featured {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* styles read-more link to featured article */
+section .read-more-featured a {
+    display: block;
+    width: 100%;
+    color: #050505;
+    font-size: .8rem;
 }
