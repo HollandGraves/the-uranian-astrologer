@@ -73,6 +73,8 @@ header h2 {
     color: #050505;
 }
 
+
+
 nav {
     display: inline-block
 }
@@ -148,6 +150,8 @@ nav a:active {
     display: block;
 }
 
+
+
 /* positioning for social media symbols */
 #social-media-header {
     display: inline-block;
@@ -184,6 +188,7 @@ nav a:active {
 --------------------------------------*/
 
 
+
 /* sets the hero image container's size, position, text-align, and margin */
 #hero-image-container {
     width: 100%;
@@ -204,6 +209,8 @@ nav a:active {
     z-index: -1;
     opacity: .95;
 }
+
+
 
 /* positions mission statement text in middle of container and sets color/uppercase */
 #mission-statement {
@@ -238,6 +245,7 @@ nav a:active {
 --------------------------------------*/
 
 
+
 /* creates size and position of content-&-sidebar container */
 #content-and-sidebar-container {
     width: 100%;
@@ -255,6 +263,8 @@ section {
     max-width: 1010px;
 }
 
+
+
 /* styles quote right beneath hero image */
 section #author-quote {
     text-align: center;
@@ -270,13 +280,17 @@ section #quotee {
     padding: 30px 0px;
 }
 
+
+
 /* creates the styles for the class involving horizontal rule, 
 these will be used to space articles within the main content */
 section .horizontal-rule {
     color: #7F7F7F;
-    opacity: .2;
+    opacity: .4;
     padding: 30px 0px;
 }
+
+
 
 /* styles the word featured that is above the image of the featured
 article */
@@ -335,17 +349,71 @@ section .end-of-article a {
     color: #454545;
 }
 
-#transneptunian-planets-section {
+
+
+/* aligns part of section about the Transneptunians center */
+#tnp-short-links {
     text-align: center;
+    padding: 20px 0;
 }
 
-#transneptunian-planets-section h2 {
-    margin-top: 20px;
+/* styles header for transneptunian planets' short links */
+#tnp-short-links h2 {
+    margin-bottom: 10px;
     font-size: 1.85rem;
-    color: #7F7F7F;
+    color: #050505;
     font-weight: 100;
 }
 
-#transneptunian-planets-section #planets-links-section {
+/* adds padding around the TNP short links */
+#tnp-short-links #planets-links-section {
     padding: 30px 0;
+}
+
+#planets-links-section a {
+    color: #050505;
+}
+
+#tnp-short-links p {
+    color: #7F7F7F;
+    font-size: .93rem;
+    line-height: 1.6;
+}
+
+
+
+/* sets the size for the container that holds all the image links to
+the TransNeptunian Planet articles */
+#tnp-articles {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tnp-article-container {
+    width: 100%;
+    max-width: 490px;
+    text-align: center;
+}
+
+.tnp-article-container a img {
+    display: block;
+    width: 100%;
+    max-width: 490px;
+    height: 100%;
+    max-height: 330px;
+    object-fit: cover;
+    object-position: 0 30%;
+}
+
+.tnp-article-container a {
+    color: #050505;
+}
+
+.tnp-article-container a:hover {
+    color: #7F7F7F;
+}
+
+.tnp-article-date {
+    display: block;
+    color: #7F7F7F;
 }
