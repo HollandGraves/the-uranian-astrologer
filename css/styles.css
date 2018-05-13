@@ -304,6 +304,10 @@ section .title-of-article a {
     font-size: 1.7rem;
 }
 
+section .title-of-article a:hover {
+    color: #454545;
+}
+
 /* sets size and centering of container containing read-more link to
 featured article */
 section .read-more-featured {
@@ -314,7 +318,34 @@ section .read-more-featured {
 /* styles read-more link to featured article */
 section .read-more-featured a {
     display: block;
-    width: 100%;
     color: #050505;
     font-size: .8rem;
+}
+
+/* date at end of an article */
+section .end-of-article {
+    text-align: center;
+    color: #7F7F7F;
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+
+/* style for link at end of article */
+section .end-of-article a {
+    color: #454545;
+}
+
+#transneptunian-planets-section {
+    text-align: center;
+}
+
+#transneptunian-planets-section h2 {
+    margin-top: 20px;
+    font-size: 1.85rem;
+    color: #7F7F7F;
+    font-weight: 100;
+}
+
+#transneptunian-planets-section #planets-links-section {
+    padding: 30px 0;
 }
