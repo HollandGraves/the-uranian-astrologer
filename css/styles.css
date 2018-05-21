@@ -193,12 +193,14 @@ nav a:active {
 #hero-image-container {
     width: 100%;
     max-height: 626px;
-    position: relative;
     text-align: center;
     margin-top: 20px;
+
+    background-image: url("img/Moon1.jpg");
+    background-size: cover;
 }
 
-/* sets size, fitting properties, position, and z-index of container's background img */
+/* sets size, fitting properties, position, and z-index of container's background img 
 #hero-image-container img {
     width: 100%;
     max-height: 626px;
@@ -208,7 +210,7 @@ nav a:active {
     left: 0;
     z-index: -1;
     opacity: .95;
-}
+}*/
 
 
 
@@ -255,6 +257,7 @@ nav a:active {
     align-items: flex-start;
     position: relative;
     top: 280px;
+    margin: 0 26px; 
 }
 
 /* creates size restrictions for content container */
