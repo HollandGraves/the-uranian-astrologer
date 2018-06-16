@@ -6,6 +6,7 @@
     4. MAIN CONTENT
     5. SIDEBAR
     6. FOOTER
+    7. MEDIA QUERIES
 */
 
 
@@ -237,7 +238,7 @@ and details about the background img */
 
 
 /*
-4. DIV CONTAINING MAIN-CONTENT & SIDEBAR
+DIV CONTAINING MAIN-CONTENT & SIDEBAR
 --------------------------------------*/
 
 
@@ -246,17 +247,25 @@ and details about the background img */
 #content-and-sidebar-container {
     width: 100%;
     max-width: 1280px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    display: block;
     position: relative;
     margin: 0 26px; 
 }
 
+
+
+
+/*
+4. MAIN-CONTENT
+--------------------------------------*/
+
+
+
 /* creates size restrictions for content container */
 section {
-    flex-basis: 80%;
+    width: 80%;
     max-width: 1010px;
+    display: inline-block;
 }
 
 
@@ -399,25 +408,38 @@ the TransNeptunian Planet articles */
 }
 
 .tnp-article-container {
-    width: 100%;
+    width: 47%;
     min-width: 200px;
     max-width: 490px;
     max-height: 440px;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 15px;
 }
 
 .tnp-article-container a img {
     display: block;
     width: 100%;
-    min-width: 200px;
-    max-width: 490px;
     height: 100%;
     max-height: 330px;
     object-fit: cover;
+}
+
+
+/* fixes image positions of the tnp articles */
+#img-cupido {
     object-position: 0 30%;
 }
 
+#img-hades {
+    object-position: 0 30%;
+}
+
+#img-zeus {
+    object-position: 30% 0;
+}
+
+
+/* sets padding and typography for details of tnp articles */
 .article-description {
     margin: 15px 0 0 0;
 }
@@ -439,6 +461,229 @@ the TransNeptunian Planet articles */
 
 
 
-#tnp-articles .space-holder {
-    width: 30px;
+
+/*
+5. SIDEBAR
+--------------------------------------*/
+
+
+
+/* sets size and positioning within container for sidebar */
+aside {
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    margin-left: 45px;
 }
+
+/* sets size, positioning for items, border, and opacity of div */
+#aside-search-bar-general {
+    margin: 60px 0 0 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7F7F7F;
+    padding: 16px 18px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    opacity: .6;
+}
+
+/* allows search bar div to be dynamic when hovered */
+#aside-search-bar-general:hover {
+    cursor: text;
+    opacity: 1;
+}
+
+/* adds padding to place search icon properly in search div */
+aside .fa-search {
+    padding-right: 10px;
+}
+
+/* sets the size, border, and typography of the search bar */
+.aside-search {
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+
+
+/* sets the positioning of the aside header text */
+aside h5 {
+    margin-top: 30px;
+}
+
+
+/* modifies horizontal-rule class from earlier */
+.aside-hr {
+    padding: 10px 0;
+    opacity: .3;
+}
+
+
+/* aligns text for aside email container, and spacing */
+#aside-email-btn {
+    text-align: start;
+    margin-top: 25px;
+}
+
+/* styles the size, color, and placement of words in the
+aside email text bar */
+.aside-text-bar {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0 25px 0;
+    padding: 10px 0;
+    background-color: rgba(240, 240, 240, 0.4);
+    border: 1px solid rgba(127, 127, 127, .4);
+    text-indent: 10px;
+}
+
+/* sets the styles for the aside email text bar when focused */
+.aside-text-bar:focus {
+    background-color: white;
+    outline: none;
+}
+
+/* styles button for aside email div */
+#aside-email-btn button {
+    text-align: center;
+    background-color: #272727;
+    border: none;
+    border-radius: 1px;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 35px;
+    margin: 0 22%;
+}
+
+#aside-email-btn button:hover {
+    transition-duration: .2s;
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+
+/* positions rss feed div */
+#aside-rss-feed {
+    padding: 40px 0px;
+    text-align: start;
+}
+
+/* colors rss feed link */
+#aside-rss-feed a {
+    text-decoration: none;
+    color: #050505;
+}
+
+#aside-rss-feed a:hover {
+    opacity: .8;
+}
+
+
+/* sets aside img wrapper size */
+aside #sidebar-img {
+    width: 100%;
+}
+
+/* sets aside img size */
+#sidebar-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* sets size of aside paragraph's container */
+#aside-p {
+    width: 100%;
+}
+
+/* sets positioning and typography of aside paragraphs */
+#aside-p p {
+    margin-top: 30px;
+    color: #7F7F7F;
+    font-size: .965rem;
+    letter-spacing: 0;
+    line-height: 1.6;
+}
+
+/* had to make font size of specific paragraph smaller
+so vertical flow can be proper */
+#aside-p #start-p {
+    font-size: .91rem;
+}
+
+/* colors aside paragraph links */
+#aside-p a {
+    color: #454545;
+}
+
+
+
+
+/*
+6. FOOTER   
+--------------------------------------*/
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.footer-hr {
+    margin-top: 80px;
+}
+
+#footer-media {
+    margin: 10px 0 35px 0;
+}
+
+/* changes spacing between social media symbols */
+#footer-media a {
+    padding: 5px;
+}
+
+/* causes all social media icons to gain opacity when 
+anyone of them are hovered over */
+#footer-media:hover > a {
+    opacity: 0.5;
+    transition-duration: .3s;
+}
+
+/* causes specific social media icon that is hovered over 
+to lose all opacity and return to it's normal color */
+#footer-media:hover > a:hover {
+    opacity: 1.0;
+    transition-duration: .3s;
+}
+
+
+
+#footer-nav {
+    margin-bottom: 90px;
+}
+
+#footer-nav a {
+    color: #050505;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+
+
+
+/*
+7. MEDIA QUERIES
+--------------------------------------*/
+
+
+
