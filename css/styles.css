@@ -247,7 +247,8 @@ DIV CONTAINING MAIN-CONTENT & SIDEBAR
 #content-and-sidebar-container {
     width: 100%;
     max-width: 1280px;
-    display: block;
+    display: flex;
+    flex-direction: row;
     position: relative;
     margin: 0 26px; 
 }
@@ -266,6 +267,7 @@ section {
     width: 80%;
     max-width: 1010px;
     display: inline-block;
+    border-right-width: 270px;
 }
 
 
@@ -409,9 +411,6 @@ the TransNeptunian Planet articles */
 
 .tnp-article-container {
     width: 47%;
-    min-width: 200px;
-    max-width: 490px;
-    max-height: 440px;
     text-align: center;
     margin: 20px 15px;
 }
@@ -475,7 +474,7 @@ aside {
     vertical-align: top;
     position: relative;
     text-align: center;
-    margin-left: 45px;
+    padding-left: 45px;
 }
 
 /* sets size, positioning for items, border, and opacity of div */
@@ -687,3 +686,16 @@ to lose all opacity and return to it's normal color */
 
 
 
+@media(max-width: 1305px) {
+
+    header {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 25px;
+    }
+
+    #social-media-header {
+        right: 25px;
+    }
+
+}
